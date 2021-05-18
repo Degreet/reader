@@ -1,9 +1,9 @@
 let savedPart = +localStorage.savedPart || 1;
 let parts = localStorage.parts;
-if (!parts || isNaN(savedPart)) location.href = 'get-text.html';
+if (!parts || isNaN(savedPart)) location.href = './get-text.html';
 
 parts = JSON.parse(parts);
-if (!(parts instanceof Array)) location.href = 'get-text.html';
+if (!(parts instanceof Array)) location.href = './get-text.html';
 
 function showPart(idx) {
 	const part = parts[idx];
@@ -13,7 +13,7 @@ function showPart(idx) {
 		document.body.innerHTML = /*html*/ `
       <main id="info">
         <h1>Финиш!</h1>
-        <a href="get-text.html">Начать новое чтение</a>
+        <a href="./get-text.html">Начать новое чтение</a>
       </main>
     `;
 	}

@@ -1,3 +1,3 @@
 goBtn.onclick = () => {
-	location.href = 'get-text.html';
+	location.href = './get-text.html';
 };
